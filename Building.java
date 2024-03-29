@@ -44,6 +44,10 @@ public class Building {
         return this.nFloors;
     }
 
+    public int getActiveFloors(){
+        return this.activeFloor;
+    }
+
     /* Navigation methods */
     public Building enter() {
         if (activeFloor != -1) {
@@ -109,6 +113,7 @@ public class Building {
         fordHall.goUp();
         fordHall.goDown();
         fordHall.exit();
+        fordHall.showOptions();
     }
 
 }
