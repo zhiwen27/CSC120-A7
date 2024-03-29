@@ -80,10 +80,10 @@ public class Cafe extends Building{
             throw new RuntimeException("Invalid floor number. Valid range for this Building is 1-" + this.nFloors +".");
         }
         if (floorNum > 1){
-            throw new RuntimeException("Sorry, you cannot enter staff-only areas. Please enter another number.");
+            throw new RuntimeException("Sorry, you cannot go to higher floors. Enjoy your coffee!");
         }
-        if (floorNum == 1){
-            System.out.println("Hmm... it seems you've figured out that you cannot move around. Enjoy your coffee!");
+        if (floorNum == this.activeFloor){
+            throw new RuntimeException("Oops, it seems that you're not going to other floors. Please enter another number.");
         }
     }
 

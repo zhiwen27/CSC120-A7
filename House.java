@@ -159,5 +159,7 @@ public class House extends Building{
       System.out.println(Tyler);
       Tyler.enter();
       Tyler.goToFloor(2);
+      Tyler.moveIn("A");
+      System.out.println(Tyler);
   }
 }
