@@ -91,7 +91,7 @@ public class Cafe extends Building{
      * Show the possible functionalities of cafes
      */
     public void showOptions() {
-        System.out.println("Available options at " + this.name + ":\n + sellCoffee(size, sugar, cream) \n + restock(coffee, sugar, cream, cup)");
+        System.out.println("Available options at " + this.name + ":\n + sellCoffee(size, sugar, cream) \n + restock(coffee, sugar, cream, cup) \n + goToFloor(n): invalid in cafes");
       }
 
     /* Do some printing */
@@ -105,7 +105,7 @@ public class Cafe extends Building{
         campusCenter.sellCoffee(2, 1, 1);
         System.out.println(campusCenter);
         campusCenter.enter();
-        campusCenter.goToFloor(1);
         campusCenter.showOptions();
+        campusCenter.goToFloor(1);
     }
 }

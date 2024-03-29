@@ -146,7 +146,7 @@ public class House extends Building{
    * Show the possible functionalities of houses
    */
   public void showOptions() {
-    System.out.println("Available options at " + this.name + ":\n + moveIn(someone) \n + moveOut(someone) \n + goToFloor(#)");
+    System.out.println("Available options at " + this.name + ":\n + moveIn(someone) \n + moveOut(someone) \n + goToFloor(n)");
   }
 
   /* Do some printing */
