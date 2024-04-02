@@ -147,7 +147,7 @@ public class Library extends Building{
    * Show the possible functionalities of libraries
    */
   public void showOptions() {
-    System.out.println("Available options at " + this.name + ":\n + addTitle(title) \n + removeTitle(title) \n + checkOut(title) \n + returnBook(title) + \n + printCollection() + goToFloor(n)");
+    System.out.println("Available options at " + this.name + ":\n + addTitle(title) \n + removeTitle(title) \n + checkOut(title) \n + returnBook(title) \n + printCollection() \n + goToFloor(n)");
   }
 
   /* Do some printing */
@@ -160,5 +160,6 @@ public class Library extends Building{
     System.out.println(Neilson);
     Neilson.enter();
     Neilson.goToFloor(3);
+    Neilson.showOptions();
   }
 }
